@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Симулятор загрузки 90-х</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="crt-effect">
+        <div class="desktop">
+            <div class="window" id="window">
+                <div class="title-bar" id="titleBar">
+                    <span class="title">Установка программы...</span>
+                    <div class="buttons">
+                        <span class="minimize">_</span>
+                        <span class="maximize">□</span>
+                        <span class="close">X</span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="diskette">🖫</div>
+                    <div class="progress-container">
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                    <p class="status-text" id="statusText">Инициализация системы... (1%)</p>
+                    <div class="loading-dots">...</div>
+                    <audio id="sound" src="sound.mp3" preload="auto"></audio>
+                </div>
+            </div>
+            <div class="taskbar">
+                <div class="start-button">Пуск</div>
+                <div class="clock" id="clock">15:41</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
